@@ -1,0 +1,23 @@
+{% extends "main.html" %}
+
+{% block title %}
+  Duskmourn - All members
+{% endblock %}
+
+{% block content %}
+  <h1>Members</h1>
+
+  <h2>
+    Back to <a href="/">home</a>
+  </h2>
+
+  <ul>
+    {% for x in mymembers %}
+      <li>
+        <a href="details/{{ x.id }}">
+          {{ x.firstname }} {{ x.lastname }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

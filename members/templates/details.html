@@ -1,0 +1,21 @@
+{% extends "main.html" %}
+
+{% block title %}
+  Duskmourn - {{ mymember.firstname }} {{ mymember.lastname }}
+{% endblock %}
+
+{% block content %}
+  <h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
+
+  <p>
+    <strong>Phone:</strong>
+    {{ mymember.phone }}
+  </p>
+  <p></p>
+    <strong>Member since:</strong>
+    {{ mymember.joined_date }}
+  </p>
+  <p>
+    Back to <a href="/members">Members</a>
+  </p>
+{% endblock %}
