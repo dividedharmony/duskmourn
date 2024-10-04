@@ -17,6 +17,8 @@ htmlcov
 coverage.xml
 coverage.coverage
 
+db.sqlite3
+
 .cache
 logserror_log.txt
 logsinfo_log.txt
